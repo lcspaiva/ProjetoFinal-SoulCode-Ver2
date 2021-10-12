@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Enroter, Logistica Reversa, Sustentabilidade">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Assets/Styles/styles.css">
+    <link rel="icon" type="image/png" href="../Assets/Icons/tree.png"/>
+    <title>Enroter</title>
+</head>
+<body>
+    <!-- tag semantica do header -->
+    <header>
+        <!-- o header bg tem a função de colorir o header -->
+        <div class="header_bg">
+            <!-- o menu será o flexbox container do header -->
+            <div class="menu" id="topo">
+                <div class="logo">
+                    <a href="index.html"><img src="../Assets/Imgs/logoEnroter.svg" alt="logo da Enroter" class="logo"></a>
+                </div> <!-- logo-->
+
+                <!-- definindo a flexbox que conterá os itens de navegação do site -->
+                <nav>
+                    <!-- flexbox container do nav -->
+                    <ul class="nav_c">
+                        <li><a href="index.html" class="nav_item button_nav">Home</a></li>
+                        <li><a href="saibaMais.html" class="nav_item button_nav">Saiba Mais</a></li>
+                        <li><a href="faleConosco.html"class="nav_item button_nav">Fale Conosco</a></li>
+                    </ul> <!-- nav_c-->    
+                </nav> <!-- nav -->
+            </div> <!-- .menu-->
+        </div><!-- .headerbg-->
+    </header>
+
+    <main>
+        <div class="main">
+            <section>
+                <h2 class="lema">Formulário para contato</h2>
+                <p class="artigo">Campos obrigatórios são seguidos por <strong><abbr title="obrigatório">*</abbr></strong></p>
+                
+                <!-- formulario FaleConosco -->
+                <form class="form_fc_c">
+                    <fieldset class="bordaForm">
+                        <legend>Envie-nos uma Mensagem</legend>
+
+                        <!-- campo nome -->
+                        <div class="form_fc_it">
+                            <label for="nome">Nome/Nome Social <strong><abbr title="obrigatório">*</abbr></strong></label>
+                        </div> 
+                        <div>
+                            <input type="text" name="nome" id="nome" placeholder="Felipe Flip Flap" required="">
+                        </div>
+                        
+                        <!-- dados do telefone -->
+                        <div class="form_fc_it">
+                            <label for="telefone">Telefone <strong><abbr title="obrigatório">*</abbr></strong></label>
+                        </div> <!-- label telefone -->
+                        
+                        <div>
+                            <input pattern="^\d{2}\s?\d{3}\s?\d{4}-?\d{4}$" type="tel" name="telefone" id="telefone" placeholder="55 DDD 8888-7445" required="">
+                        </div> <!-- input do numero de telefone com Regex -->
+                        
+                        <div class="form_fc_it">
+                            <label for="tipoTelefone">Tipo Telefone <strong><abbr title="obrigatório">*</abbr></strong></label>
+                        </div> <!-- tipo do telefone -->
+                        
+                        <!-- container do radio -->
+                        <div class="radio_c">
+                            <div class="radio_it">
+                                <input type="radio" id="Residencial" name="tipoTelefone" value="residencial">
+                                <label for="Residencial">Residencial</label>
+                            </div>
+                            <div class="radio_it">
+                                <input type="radio" id="Comercial" name="tipoTelefone" value="comercial">
+                                <label for="Comercial">Comercial</label>
+                            </div>
+                            <div class="radio_it">
+                                <input type="radio" id="Celular" name="tipoTelefone" value="celular">
+                                <label for="Celular">Celular</label>
+                            </div>    
+                        </div> <!-- .radio_c -->
+                        
+                        <!-- campo email -->
+                        <div class="form_fc_it">
+                            <label for="email">Email <strong><abbr title="obrigatório">*</abbr></strong></label>
+                        </div>
+                        <div>
+                            <input type="email" name="email" id="email" placeholder="email@email.com" required="">
+                        </div>    
+                        
+                        <!-- campo cidade -->
+                        <div class="form_fc_it">
+                            <label for="cidade">Cidade <strong><abbr title="obrigatório">*</abbr></strong></label>
+                        </div>
+                        <div>
+                            <input type="text" name="cidade" id="cidade" placeholder="Jurassic Park" required="">
+                        </div>
+
+                        <!-- select do estado -->
+                        <div class="form_fc_it">
+                            <label for="estado">Selecione seu Estado <strong><abbr title="obrigatório">*</abbr></strong></label>
+                        </div>
+                        <div>
+                            <select name="estado" id="estado" required="">
+                                <option selected="true" disabled="disabled">Selecione Seu Estado</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+
+                        <!-- select da faixa etaria -->
+                        <div class="form_fc_it">
+                            <label for="faixaEtaria">Faixa Etaria <strong><abbr title="obrigatório">*</abbr></strong></label>
+                        </div>
+                        <div>
+                            <select name="faixaEtaria" id="faixaEtaria" required>
+                                <option selected="true" disabled="disabled">Selecione sua Faixa Etaria</option>
+                                <option value="1">0 à 10</option>
+                                <option value="2">11 a 25</option>
+                                <option value="3">26 a 40</option>
+                                <option value="4">41 a 56</option>
+                                <option value="5">57 ou mais</option>
+                            </select>
+                        </div>
+
+                        <!-- select da competencia (tipo do usuario) -->
+                        <div class="form_fc_it">
+                            <label for="competencia">Habilidades<strong><abbr title="obrigatório">*</abbr></strong></label>
+                        </div>
+                        <div>
+                            <select name="competencia" id="competencia">
+                                <option selected="true" disabled="disabled">Selecione o tipo de usuário</option>
+                                <option value="residencia">residência</option>
+                                <option value="catador">catador</option>
+                                <option value="comercio">comércio</option>
+                                <option value="empresa">empresa</option>
+                                <option value="cooperativa">cooperativa</option>
+                            </select>
+                        </div>
+
+                        <!-- input do assunto -->
+                        <div class="form_fc_it">
+                            <label for="assunto">Assunto</label>
+                        </div>
+                        <div>                           
+                            <input type="text" name="assunto" id="assunto" placeholder="Exemplo">
+                        </div>
+
+                        <!-- textarea da mensagem -->
+                        <div class="form_fc_it">
+                            <label for="mensagem">Digite sua Mensagem <strong><abbr title="obrigatório">*</abbr></strong></label>
+                        </div>
+                        <div>
+                            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Sua Mensagem Aqui!" required=""></textarea>
+                        </div>
+
+                        <input type="submit" value="Enviar" class="buttonForm">
+                        <input type="reset" value="Limpar" class="buttonForm">
+                    </fieldset>
+                </form> <!-- formulario para contato-->     
+            </section>
+        </div> <!-- .main-->
+    </main>
+    <footer>
+        <!-- define o fundo do footer-->
+        <div class="footer_bg">
+            <!-- container dos itens do footer-->
+            <div class="footer_c">
+                <!-- item do footer-->
+                <div class="footer_it">
+                    Onde Estamos:
+                    <address>
+                        <p class="p_footer">
+                            P.sherman 42 Wallaby Way - Sydney-Aus
+                            Prédio das Algas, sala 22
+                        </p>
+                        <p class="p_footer">
+                            Próximo à praça Marlin das Ostras - Em frente ao Siri-Cascudo
+                        </p>
+                        <p class="p_footer">
+                             
+                        </p>
+                    </address>
+                </div> <!-- footer item1 (endereço)-->
+
+                <!-- item do footer-->
+                <div class="footer_it">
+                    <p class="p_footer">
+                        Contate-nos:
+                    </p>
+
+                    <ul class="ul_footer">
+                        <li>Fone: +01 (01) 2255-8815, das 14:00 as 14:05.</li>
+                        <li>Email: Enroter@enroter.com.atl</li>
+                        <li>Caixa Postal: 55525-000</li>
+                    </ul> 
+                </div><!-- footer item2 (contato )-->
+
+                <!-- item do footer -->
+                <div class="footer_it"> 
+                    <p class="p_footer">
+                        Acesse nossas redes sociais:
+                    </p>
+                    <!-- container dos itens das redes sociais-->
+                    <div class="rs_icons_c">
+                        <div class="rs_icons_it">
+                            <a href="https://facebook.com"><img src="../Assets/Icons/facebook.png" alt="logo do facebook"></a>
+                        </div> <!-- facebooklogo -->
+
+                        <div class="rs_icons_it">
+                            <a href="https://instagram.com"> <img src="../Assets/Icons/instagram.png" alt="logo do instagram"></a>
+                        </div> <!-- instagramlogo-->
+
+                        <div class="rs_icons_it">
+                            <a href="https://twitter.com"> <img src="../Assets/Icons/twitter.png" alt="logo do twitter"></a>
+                        </div> <!-- twitterlogo-->
+                    </div> <!-- .rs_icons_c (container dos itens de redes sociais) -->   
+                </div> <!-- footer item3 (redes sociais) -->
+            </div> <!-- .footer_c-->
+        </div><!-- .footerbg -->
+
+        <!-- div para dar o copyright ao final da página -->
+        <div class="copy_bg">
+            <!-- container que conterá o item-->
+            <div class="copy_c">
+                <!-- item do container -->
+                <div class="copy_it">
+                    <p>
+                        Copyright: Todos os direitos reservados ©. Os direitos das imagens utilizadas pertencem aos seus respectivos
+                        donos. As mesmas imagens foram utilizadas exclusivamente para fins didáticos.
+                    </p>
+                </div> <!-- copy_it-->
+            </div> <!-- copy_c -->
+        </div> <!-- copy_bg -->
+    </footer>
+
+    <!-- seção do vlibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    </div> <!-- Vlibras-->
+</body>
+</html>

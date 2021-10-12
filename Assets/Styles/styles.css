@@ -1,0 +1,394 @@
+/* definindo para todos os elementos utilizarem box-sizing: border box
+ou seja, considerarem que o padding e o border não façam parte da conta da divisória
+do conteúdo */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    line-height: 1.30;
+}
+
+/*********************************************************/
+/*
+    0 - Variáveis
+    1 - Estilos gerais
+    2 - Header
+    3 - Main
+    4 - Footer
+    5 - Copyright
+    6 - Seção texto + imagem
+    7 - Seção texto + video 
+    8 - Formulário FaleConosco
+*/
+/*********************************************************/
+
+/*********************************************************/
+/* 0 - variáveis (são as variaveis "globais" do css), exemplo def de cores, fonte e afins*/
+
+img{
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+:root{
+    --cor-branca: #f5f5f5;
+    --cor-verde-escuro: #003E21; 
+    --cor-verde1: #067242;
+    --cor-verde2:  #098B54;
+    --cor-verde-preto: #202E24; /*usar no footer*/
+
+    --cor-fundo: #4AA96C;
+    --cor-top: #9FE6A0;
+    --cor-foot1: #564A4A;
+
+    /* foot */
+    --cor-foot2: #A09F57;
+    --cor-foot3: #C8C2BC;
+
+
+    --ff-estilo: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*********************************************************/
+
+/*********************************************************/
+/* 1 - Estilos gerais*/
+/*********************************************************/
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--cor-fundo);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+figcaption{
+    font-size: small;
+    font-style: italic;
+    color: darkgreen;
+}
+
+/*********************************************************/
+/* 2 - HEADER */
+/*********************************************************/
+
+/* backgorund o header */
+.header_bg{
+    background-color: var(--cor-top);
+}
+
+/* ajustando o tamanho do logo */
+.logo{
+    max-width: 200px;
+    max-height: 70px;
+    margin-left: 10px;
+}
+/* flexbox do menu, contém o logo e o nav*/
+.menu{
+    display: flex;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto; /* centralizar */
+    align-items: center;
+}
+
+/* container das opçoes de navegação */
+.nav_c{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* tirando os bullets do list */
+ul.nav_c{
+    list-style-type: none;
+}
+
+/* opçoes clicáveis de navegação*/
+.nav_item{
+    display: flex;
+    list-style-type: none;
+    background-color: var(--cor-fundo);
+    margin-left: 18px;
+    border: 2px solid black;
+    padding: 4px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+/* definindo o comportamento do botao do menu nav */
+.button_nav{
+    transition-duration: 0.4s;
+}
+
+/* definindo o comportamento do botao do menu nav */
+.button_nav:hover {
+    background-color: white; /* Green */
+    color: black;
+}
+
+/*********************************************************/
+/* 3 - MAIN */
+/*********************************************************/
+.main{
+    background-color: var(--cor-branca);
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto; /* centralizar */
+    flex-direction: column;
+    justify-content: flex-start; /* testar a melhor opção*/
+    align-items: center;
+}
+
+h2.lema{
+    margin: 18px;
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    border-bottom: 2px solid green;
+    text-align: center;
+
+}
+
+.banner{
+    max-width: 100%;
+}
+
+.artigo{
+    margin-top: 25px;
+    font-family: var(--ff-estilo);
+}
+
+hr.divisor{
+    border: 1px solid green;
+}
+
+article{
+    margin-left: 10px;
+    margin-right: 10px;    
+    font-size: x-large;
+    font-weight: normal;
+    margin-bottom: 80px;
+}
+
+p.texto{    
+    margin-bottom: 18px;
+}
+
+.voltar_topo{
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+
+}
+
+/*********************************************************/
+/* 4 - FOOTER */
+/*********************************************************/
+/* define a cor do footer */
+.footer_bg{
+    background-color: var(--cor-verde-preto);
+}
+
+/* é o flexbox container do footer */
+.footer_c{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto; /* centralizar */
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+/* flexbox item do container */
+.footer_it{
+    border: 1px solid var(--cor-verde-preto);
+    width: 330px;
+    height: 150px;
+    color: white;
+    font-size:large;
+    font-weight: normal;
+}
+
+.rs_icons_c{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly ;
+}
+
+.rs_icons_it{
+    max-width: 40px;
+    max-height: 40px;
+}
+
+/*********************************************************/
+/* 5 - COPYRIGHT */
+/*********************************************************/
+.copy_bg{
+    background-color: var(--cor-verde-preto);
+}
+
+.copy_c{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.copy_it{
+    color: white;
+    font-size: medium;
+    font-weight: normal;
+}
+
+/*********************************************************/
+/* 6 - SECAO TEXTO+IMAGEM */
+/*********************************************************/
+
+/* container da seção, conterá o txt e a imagem */
+.secao_c{
+    display: flex;
+    flex-wrap: wrap;
+    /* max-width: 1000px; */
+}
+
+/* item do texto */
+.secao_it_txt{
+    /* flexgrow - flexshrink - flexbasis */
+    /* o texto dev ocupar uma area 6maior que a img */
+    /* o item pode reduzir o tamanho */
+    /* o tamanho inicial do elemento é 160px */
+    flex: 4 1 110px; 
+}
+
+/* item da imagem */
+.secao_it_img{
+    flex: 1 1 200px;
+}
+
+/*********************************************************/
+/* 7 - SECAO TEXTO + VIDEO */
+/*********************************************************/
+/* container da secao que conterá texto + vid */
+.secao_video_c{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/* item do video*/ 
+.secao_it_vid{
+    margin: 0 auto;
+    max-width: 700px;
+    max-height: 700px;
+}
+
+/*********************************************************/
+/* 7 - FORMULARIO FALECONOSCO */
+/*********************************************************/
+/*
+
+/* form faleconosco container */
+.form_fc_c{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; /* testar se muda de volta*/
+    font-size: x-large;
+    width: 780px;
+}
+
+@media (max-width: 800px) {
+    .form_fc_c{
+        width: auto;
+    }
+}
+
+
+.form_fc_it{
+    width: 200px;
+    height: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-weight: normal;
+    margin-top: 10px;
+    line-height: 1.5;
+    display: inline;
+}
+
+input[type=text], input[type=number], input[type=tel], input[type=email]{
+    width: 40%;
+    padding: 12px 20px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    border: 2px solid darkgreen;
+    border-radius: 4px;
+    display: inline;
+}
+
+select{
+    width: 40%;
+    padding: 12px 20px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    border: 2px solid darkgreen;
+    border-radius: 4px;
+}
+
+textarea{
+    width: 40%;
+    padding: 12px 20px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    border: 2px solid darkgreen;
+    border-radius: 4px;
+}
+
+legend{
+    font-size: x-large;
+    background-color: darkgreen;
+    border: 1px solid darkgreen;
+    width: 100%;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bordaForm{
+    border: 2px solid darkgreen;
+    margin-bottom: 10px;
+}
+
+/* container do radiobutton */
+.radio_c{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+    margin-bottom: 10px;
+}
+
+/* item do radio */
+.radio_it{
+    margin-left: 10px;
+}
+
+/* estilizando os botões de envio e de reset */
+.buttonForm{
+    background-color: darkgreen;
+    font-size: 16px;
+    padding: 5px 12px;
+    border-radius: 10px;
+    /* border: 2px solid white; */
+    transition-duration: 0.4s;
+    color: white;
+    font-weight: bolder;
+}
+
+/* definindo o comportamento do botão quando o mouse passa por cima */
+.buttonForm:hover {
+    background-color: white; /* Green */
+    color: black;
+}

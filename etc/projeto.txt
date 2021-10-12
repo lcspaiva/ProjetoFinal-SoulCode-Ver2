@@ -1,0 +1,6 @@
+usar flexbox em vez de grid
+um landing com um banner
+um saiba mais com imagens e um rolamento (colocar uma navegação rápida?)
+header fino e clean
+logo como svg
+fazer um footer com menos informação?

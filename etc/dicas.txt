@@ -1,0 +1,5 @@
+- comentar no codigo (na tag que fecha) o nome da tag que ela está fechando, para facilitar a
+    visualização
+
+- css metodologia BEM = bloco, elemento, modificador (get bem)
+- escrever um sumario no css

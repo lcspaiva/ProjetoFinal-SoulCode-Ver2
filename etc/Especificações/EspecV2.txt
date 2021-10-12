@@ -1,0 +1,31 @@
+Projeto Final de HTML5 + CSS3
+
+Escopo: 
+    Criar páginas com extensão HTML5, utilizando o máximo possível de tags ou marcadores vistos nas aulas. 
+    Usar CSS3 com o máximo de estilização possível.
+    Você é um desenvolvedor, contratado para elaborar uma solução para uma Empresa renomada, que atua em todas as 
+    regiões do País. Esta Empresa, inicialmente, solicitou a construção do HTML5 + CSS3 para validação. 
+    Sendo assim, verifique os requisitos solicitados pela Empresa, para criar sua solução. São eles:
+
+
+
+Requisitos Funcionais:
+    RF[01]: O projeto deve conter 3 páginas;
+    RF[02]: A primeira página será a apresentação do ramo de atividades da Empresa, já utilizando estilo CSS3;
+    RF[03]: A segunda página conterá informações, imagens, músicas, texturas, etc. relacionadas a empresa, já utilizando estilo CSS3;
+    RF[04]: A terceira página terá um formulário de contato com 
+    nome, telefone, e-mail, cidade, seleção para faixa etária, seleção para habilidades, estado, assunto, mensagem, 
+    botão enviar e limpar, já utilizando estilo CSS3.
+
+Requisitos Não Funcionais:
+    RNF[01]: Utilize VS Code para criar a solução;
+    RNF[02]: A solução deve rodar no navegador Chrome;
+    RNF[03]: Utilizar HTML5 e CSS3.
+
+Regras de Negócio:
+    RN[01]: A solução pode ser desenvolvida para uma empresa fictícia ou inspirada em empresa real, que faça parte de seu network;
+    RN[02]: Os alunos serão divididos em 10 grupos para que cada um desenvolva seu projeto individual de forma colaborativa;
+    RN[03]: Os temas serão sorteador entre os grupos no primeiro dia de aula, para fins de organização e pesquisa;
+    RN[05]: As apresentações das soluções construídas ocorrerá no dia 04/10/21, no período da manhã;
+    RN[06]: Todos os alunos devem postar as soluções no GitHub para fins de avaliação;
+    RN[07]: Serão sorteados um aluno de cada TEMA para apresentar os projetos.
